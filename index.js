@@ -55,13 +55,13 @@ app.route('/expense/:id').get(function (req, res) {
 });
 
 app.route('/updateExpense/:expense_id').post(function (req, res) {
-    Todo.findOneAndUpdate({ _id: req.params.expense_id }, { $set: req.body })
+    Expense.findOneAndUpdate({ _id: req.params.expense_id }, { $set: req.body })
         .then(_ => res.status(200).json("Update sucessfull"))
         .catch(err => res.status(400).send(err))
 });
 
 app.route('/deleteExpense/:expense_id').delete(function (req, res) {
-    Todo.remove({ _id: req.params.expense_id })
+    Expense.remove({ _id: req.params.expense_id })
         .then(_ => res.status(200).json("Delete sucessfull"))
         .catch(err => res.status(400).send(err))
 });

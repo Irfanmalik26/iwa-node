@@ -21,7 +21,7 @@ connection.once('open', function () {
 })
 
 app.route('/').get(function (req, res) {
-    res.json('Express server running...');
+    res.json('Express server is running...');
 });
 
 app.route('/addExpense').post(function (req, res) {

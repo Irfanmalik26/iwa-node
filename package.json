@@ -1,5 +1,5 @@
 {
-  "name": "todo",
+  "name": "expense",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/nazim-git/todo.git"
   },
-  "author": "nazim",
+  "author": "ali",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",

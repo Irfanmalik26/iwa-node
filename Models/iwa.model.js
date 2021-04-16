@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 let myCollection = new Schema({
     name: { type: String, require: true },
-    description: { type: Number },
+    description: { type: String },
     price: { type: Number, default: 0 },
 }, { collection: 'myCollection' });
 
